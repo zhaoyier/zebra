@@ -18,5 +18,5 @@ module.exports = function(app){
     app.get("/photo/:id", temp.GetPhotoDetail);
 
     //app.get("/uptoken", );
-    app.file()
+    //app.file()
 };
