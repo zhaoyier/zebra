@@ -17,6 +17,6 @@ module.exports = function(app){
     app.get("/temp", temp.GetPhotos);
     app.get("/photo/:id", temp.GetPhotoDetail);
 
-    app.get("/uptoken", );
+    //app.get("/uptoken", );
     app.file()
 };
