@@ -4,7 +4,8 @@ var about = require("./../controller/about");
 var productA = require("./../controller/productA");
 var productB = require("./../controller/productB");
 var portfolio = require("./../controller/portfolio");
-var temp = require("./../controller/temp")
+var temp = require("./../controller/temp");
+var join = require("./../controller/join");
 
 module.exports = function(app){
     app.get('/', home.home);
@@ -17,6 +18,6 @@ module.exports = function(app){
     app.get("/temp", temp.GetPhotos);
     app.get("/photo/:id", temp.GetPhotoDetail);
 
-    //app.get("/uptoken", );
+    app.post("/join", join.JoinUs);
     //app.file()
 };
