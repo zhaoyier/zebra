@@ -13,6 +13,7 @@
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "~4.14.1",
+    "express-sitemap": "^1.7.0",
     "moment": "^2.18.1",
     "mongolass": "^2.4.4",
     "morgan": "~1.7.0",
@@ -20,6 +21,7 @@
     "mysql": "^2.13.0",
     "node-sass-middleware": "0.9.8",
     "qiniu": "^6.1.13",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "sitemap": "^1.12.0"
   }
 }
