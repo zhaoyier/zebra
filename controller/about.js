@@ -4,5 +4,5 @@
 var handler = module.exports;
 
 handler.about = function (req, res) {
-    res.render("about", {title: "这里是简介"})
+    res.render("update", {title: "这里上传图片"})
 };

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% images.forEach(function (post, index) { %>
+    <p><h2><a href="about"><%= post.id %></a></h2></p>
+    <p class="info"><%= post.img %></p>
+    <img width="80" height="100"  src="<%=post.img%>">
+    <a class="btn btn-success" style="width: 120px;"  href="/photo/<%=post.id%>">加入购物车</a>
+    <% }) %>
+</body>
+</html>
