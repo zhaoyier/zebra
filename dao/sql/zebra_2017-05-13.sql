@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.17)
 # Database: zebra
-# Generation Time: 2017-05-13 06:34:26 +0000
+# Generation Time: 2017-05-13 09:53:44 +0000
 # ************************************************************
 
 
@@ -112,16 +112,16 @@ CREATE TABLE `product` (
   `create_time` datetime DEFAULT NULL,
   `update_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
 
 INSERT INTO `product` (`id`, `nickname`, `username`, `age`, `level`, `sales`, `address`, `mobile`, `image`, `status`, `create_time`, `update_time`)
 VALUES
-	(4,'d','ma',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 17:16:10','2017-03-18 17:16:10'),
-	(5,'e','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:43:38','2017-03-18 21:43:38'),
-	(6,'f','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:43:45','2017-03-18 21:43:45'),
+	(4,'d','ma',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 17:16:10','2017-03-18 17:16:10'),
+	(5,'e','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:43:38','2017-03-18 21:43:38'),
+	(6,'f','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:43:45','2017-03-18 21:43:45'),
 	(7,'g','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:43:49','2017-03-18 21:43:49'),
 	(8,'h','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:43:53','2017-03-18 21:43:53'),
 	(9,'i','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:43:56','2017-03-18 21:43:56'),
@@ -129,7 +129,16 @@ VALUES
 	(11,'k','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:44:03','2017-03-18 21:44:03'),
 	(12,'l','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:44:06','2017-03-18 21:44:06'),
 	(13,'m','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:44:09','2017-03-18 21:44:09'),
-	(14,'n','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13');
+	(14,'n','qian',21,1,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0001.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(16,'o','qian',22,2,0,1,'1521994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(17,'p','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(18,'r','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(19,'s','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(20,'t','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(21,'u','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(22,'v','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(23,'w','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13'),
+	(24,'x','qian',22,2,0,1,'15201994768','http://oo3l8sz3b.bkt.clouddn.com/0002.jpeg',0,'2017-03-18 21:44:13','2017-03-18 21:44:13');
 
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
