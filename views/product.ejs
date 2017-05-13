@@ -2,7 +2,10 @@
     <% products.forEach(function (p, index) { %>
     <div class="col-md-4">
         <div class="thumbnail">
-            <img alt="300x500" src= <%=p.image%> />
+            <p disabled="false" id="product_id"><%=p.id%></p>
+            <a href="/show/<%=p.id%>" id="js_show2">
+                <img src="<%= p.image%>">
+            </a>
             <div class="caption">
                 <p>
                     昵称: <%=p.nickname %>
@@ -21,3 +24,4 @@
     </div>
     <% }) %>
 </div>
+

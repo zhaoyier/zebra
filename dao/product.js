@@ -11,7 +11,7 @@ var product = {
     "p.`image`, a.`province`, a.`city`, a.`county`, a.`street` " +
     "FROM `product` AS p, `address` AS a " +
     "WHERE 1=1 AND p.`address`=a.`id` AND p.`status`=0 AND p.`id`=?",
-    QueryProducts: "SELECT p.`nickname`, p.`age`, p.`level`, p.`mobile`, " +
+    QueryProducts: "SELECT p.`id`, p.`nickname`, p.`age`, p.`level`, p.`mobile`, " +
     "p.`image`, a.`province`, a.`city`, a.`county`, a.`street` " +
     "FROM `product` AS p, `address` AS a " +
     "WHERE 1=1 AND p.`address`=a.`id` AND p.`status`=0 AND p.`level`=? ORDER BY `sales` DESC",
