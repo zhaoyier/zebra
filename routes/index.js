@@ -17,5 +17,4 @@ module.exports = function(app){
     app.get("/show/:id", show.GetPhotoDetail);
 
     app.post("/join", join.JoinUs);
-    //app.file()
 };
