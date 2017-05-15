@@ -14,7 +14,8 @@ module.exports = function(app){
     app.get("/p1", p1.ProductList);
     app.get("/p2", p2.ProductList);
     app.get("/temp", temp.GetPhotoDetail);
-    app.get("/show/:id", show.GetPhotoDetail);
+    app.get("/show/:id", show.GetPhotoShow);
+    app.get("/detail", show.GetPhotoDetail);
 
     app.post("/join", join.JoinUs);
 };
