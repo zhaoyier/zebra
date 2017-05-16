@@ -2,56 +2,72 @@
 <!--[if !IE]><!-->
 <html lang="en" class="ie9">
 <!--<![endif]-->
-    <% include head.ejs%>
-    <body class="no-trans">
-        <!-- scrollToTop -->
-        <!-- ================ -->
-        <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+<% include include/head.ejs%>
+<body class="no-trans">
+<!-- scrollToTop -->
+<!-- ================ -->
+<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-        <!-- header start -->
-        <!-- ================ -->
-        <header class="header fixed clearfix navbar navbar-fixed-top">
-            <div class="container">
-                <%include header.ejs%>
-            </div>
-        </header>
-        <!-- header end -->
+<!-- header start -->
+<!-- ================ -->
+<header class="header fixed clearfix navbar navbar-fixed-top">
+    <div class="container">
+        <%include include/header.ejs%>
+    </div>
+</header>
+<!-- header end -->
 
-        <!-- banner start -->
-        <!-- ================ -->
-        <div id="banner" class="banner">
-            <div class="banner-image"></div>
-            <div class="banner-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-                            <h1 class="text-center">We are <span>Worthy</span></h1>
-                            <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos debitis provident nulla illum minus enim praesentium repellendus ullam cupiditate reiciendis optio voluptatem, recusandae nobis quis aperiam, sapiente libero ut at.</p>
-                        </div>
-                    </div>
+<!-- banner start -->
+<!-- ================ -->
+<div id="banner" class="banner">
+    <div class="banner-image"></div>
+    <div class="banner-caption">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                    <h1 class="text-center">We are <span>Worthy</span></h1>
+                    <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos debitis provident nulla illum minus enim praesentium repellendus ullam cupiditate reiciendis optio voluptatem, recusandae nobis quis aperiam, sapiente libero ut at.</p>
                 </div>
             </div>
         </div>
-        <!-- banner end -->
+    </div>
+</div>
+<!-- banner end -->
 
-        <!-- 照片墙A start -->
-        <!-- ================ -->
-        <div class="section container translucent-bg bg-image-1">
-            <h1 id="serviceA"  class="text-center title">Worthy Services</h1>
+<!-- 项目展示 start -->
+<!-- ================ -->
+<div class="section clearfix object-non-visible container bg-image-1 blue" data-animation-effect="fadeIn">
+    <h1 id="about" class="title text-center">About <span>Worthy</span></h1>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
             <div class="row clearfix">
-                <div class="col-md-12 column">
-                    <% include ./product.ejs %>
-                </div>
+                <% include include/introduction.ejs%>
+                <% include ./consume.ejs%>
             </div>
         </div>
-        <!-- 照片墙A end -->
-        <!-- footer start -->
-        <!-- ================ -->
-        <footer id="footer">
-            <% include ./contact.ejs%>
-        </footer>
-        <!-- footer end -->
+    </div>
+</div>
+<!-- 项目展示 end -->
 
-        <% include ./script.ejs %>
+<!-- 照片墙A start -->
+<!-- ================ -->
+<div class="section container translucent-bg bg-image-1">
+    <h1 id="serviceA"  class="text-center title">Worthy Services</h1>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <% include ./product.ejs %>
+        </div>
+    </div>
+</div>
+<!-- 照片墙A end -->
+
+<!-- footer start -->
+<!-- ================ -->
+<footer id="footer">
+    <% include ./contact.ejs%>
+</footer>
+<!-- footer end -->
+
+<% include include/script.ejs %>
 </body>
 </html>

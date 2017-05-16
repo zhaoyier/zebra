@@ -3,13 +3,13 @@
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
-<% include ./head.ejs%>
+<% include include/head.ejs%>
 
 <body class="no-trans">
 
-<% include header.ejs%>
+<% include include/header.ejs%>
 
-<%include ./banner.ejs%>
+<%include include/banner.ejs%>
 
 <% for(var i=0; i<images.length; ++i) { %>
 <div class="row clearfix">
@@ -26,7 +26,7 @@
 
 </div>
 <%}%>
-<% include ./script.ejs %>
+<% include include/script.ejs %>
 
 </body>
 </html>

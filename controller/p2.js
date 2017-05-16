@@ -7,7 +7,7 @@ var product = require("../dao/product");
 handler.ProductList = function(req, res) {
     var level = req.param("level")||2;
     product.QueryProductList(level, function (err, data) {
-        res.render("p1", {products: data});
+        res.render("p2", {title: "测试", products: data});
     });
 };
 
