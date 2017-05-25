@@ -27,6 +27,11 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.use(function (req, res, next) {
+//     console.log("request path is:\t", req.method, req.path)
+//     next(null);
+// });
+
 routes(app);
 
 // catch 404 and forward to error handler

@@ -27,7 +27,6 @@ module.exports = {
             if (err != null) {
                 return callback(err, null)
             } else {
-                console.log("======>>001:\t", product.QueryProducts);
                 connection.query(product.QueryProducts, [level], function (err, result) {
                     connection.release();
                     return callback(err, result)
